@@ -1,0 +1,15 @@
+.text {
+    color: var(--color-yellow);
+    font-size: var( --font-size-header);
+    width: 600px;
+    margin: auto;
+    margin-top: 100px;
+    line-height: 1.7;
+    text-align: center;
+    text-shadow: 0 0 .5px var(--color-white);
+
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: var(--color-yellow);
+    -webkit-text-stroke-width: .5px;
+
+}

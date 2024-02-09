@@ -2,10 +2,12 @@
   --main-bg-color: rgb(32, 30, 30);
   --color-white: #fff;
   --color-black: #000;
+  --color-yellow: #d2e12c;
 
   --spacing-medium: 2vw;
 
   --font-family-main: sans-serif;
+  --font-size-header: 26px;
 
   --border-radius-small: 8px;
 }
