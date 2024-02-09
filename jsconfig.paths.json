@@ -1,0 +1,15 @@
+// jsconfig.paths.json or tsconfig.paths.json
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "extends": "./jsconfig.paths.json", // or "./tsconfig.paths.json"
+    "compilerOptions": {
+      // ...
+    },
+      "paths": {
+        "example/*": ["example/src/*"],
+        "@library/*": ["library/src/*"]
+      }
+      
+    }
+  }
