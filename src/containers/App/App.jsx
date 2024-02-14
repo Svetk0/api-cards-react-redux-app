@@ -12,6 +12,7 @@ const App = () => {
 
   return (
     <>
+      <div className={styles.wrapper}>
       <Header/>
       <Routes>
         {routesConfig.map((route, index) => (
@@ -22,18 +23,8 @@ const App = () => {
             element={route.component}
           />
         ))}
-         
-          
-         
       </Routes>
-
-      {/* <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/people" element={<PeoplePage />} />
-         
-      </Routes> */}
-    
-   
+      </div>
     </>
   );
 };

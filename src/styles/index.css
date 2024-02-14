@@ -1,29 +1,43 @@
 :root {
-  --main-bg-color: rgb(32, 30, 30);
+  --color-dark-gray: rgb(32, 30, 30);
   --color-white: #fff;
   --color-black: #000;
   --color-yellow: #d2e12c;
---color-blue:#6a83fb;
+  --color-blue: #6a83fb;
+  --color-violet: #ae72c2;
+
   --spacing-medium: 2vw;
   --spacing-large: 5vw;
 
-  --transition:0.4s;
+  --transition: 0.4s;
   --font-family-main: sans-serif;
+  --font-size-main: 16px;
   --font-size-header: 26px;
   --font-bold: 600;
-  --text-shadow-yellow: 
-  0 0 2px var(--color-white),
-  0 0 40px var(--color-blue);
+  --text-shadow-yellow: 0 0 2px var(--color-white), 0 0 40px var(--color-blue);
 
   --border-radius-small: 8px;
 
+  --width-max: 1200px;
   --theme-default-header: #cccc46;
+  --theme-default-bgimage: url(@static/bg.jpeg);
 }
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--main-bg-color);
   font-family: var(--font-family-main);
+  font-size: var(--font-size-main);
+  background-color: var(--color-dark-gray);
+  background-image: var(--theme-default-bgimage);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-attachment: fixed;
+
+}
+
+img{
+  display: block;
 }
 
 .header__text {
