@@ -3,17 +3,33 @@
   --color-white: #fff;
   --color-black: #000;
   --color-yellow: #d2e12c;
-
+--color-blue:#6a83fb;
   --spacing-medium: 2vw;
+  --spacing-large: 5vw;
 
+  --transition:0.4s;
   --font-family-main: sans-serif;
   --font-size-header: 26px;
+  --font-bold: 600;
+  --text-shadow-yellow: 
+  0 0 2px var(--color-white),
+  0 0 40px var(--color-blue);
 
   --border-radius-small: 8px;
+
+  --theme-default-header: #cccc46;
 }
 body {
   margin: 0;
   padding: 0;
   background-color: var(--main-bg-color);
   font-family: var(--font-family-main);
+}
+
+.header__text {
+  line-height: 1.7;
+  font-size: var(--font-size-header);
+  text-shadow: 0 0 2px var(--color-black);
+  color: var(--theme-default-header);
+  transition: color var(--transition);
 }
