@@ -1,5 +1,9 @@
 
-
+/**
+ * Make a fetch request
+ * @param {String} url - url for request
+ * @returns {Promise} - Promise with results
+ */
 export const getApiResource = async (url) => {
    
     
