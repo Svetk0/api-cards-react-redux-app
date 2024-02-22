@@ -6,6 +6,7 @@
   --color-blue: #6a83fb;
   --color-violet: #ae72c2;
 
+  --spacing-xs: 0.5vw;
   --spacing-small: 1vw;
   --spacing-medium: 2vw;
   --spacing-large: 5vw;
@@ -22,8 +23,11 @@
 
   --text-shadow-blue: 0 0 2px var(--color-white), 0 0 40px var(--color-blue);
 
+  --border-radius-xs: 3px;
   --border-radius-small: 8px;
+  --border-radius-medium: 12px;
 
+  --margin-list: 7px;
   --width-max: 1200px;
   --theme-default-header: #cccc46;
   --theme-default-bgimage: url(@static/bg.jpeg);
