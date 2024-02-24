@@ -4,6 +4,8 @@ import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
 import PersonInfo from "@components/PersonPage/PersonInfo";
 import PersonPhoto from "@components/PersonPage/PersonPhoto";
+import PersonLinkBack from "@components/PersonPage/PersonLinkBack";
+
 import { getApiResource } from "@utils/network";
 import { getPeopleImage } from "@services/getPeopleData";
 import { API_PERSON } from "@constants/api";
@@ -51,8 +53,11 @@ const PersonPage = ({ setErrorApi }) => {
   }, []);
 
   return (
-    <>
-      <div className={styles.wrapper}>
+      <>
+          <div className={styles.wrapper_main}>
+          <PersonLinkBack/>
+          <div className={styles.wrapper}>
+              
         <span className={styles.person__name}>{personName}</span>
 
         <div className={styles.container}>
@@ -61,6 +66,8 @@ const PersonPage = ({ setErrorApi }) => {
           {personInfo && <PersonInfo personInfo={personInfo} />}
         </div>
       </div>
+          </div>
+         
     </>
   );
 };
