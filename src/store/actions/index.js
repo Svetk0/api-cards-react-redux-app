@@ -9,7 +9,7 @@ export const setPersonToFavorite = person => {
     
 }
 
-export const removePersonFromFavorite = () => ({
+export const removePersonFromFavorite = personId => ({
     type: REMOVE_PERSON_FROM_FAVORITE,
-    payload: ''
+    payload: personId
 })
