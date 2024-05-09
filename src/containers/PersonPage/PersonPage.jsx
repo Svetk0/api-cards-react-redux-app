@@ -15,12 +15,14 @@ import styles from "./PersonPage.module.css";
 
 const PersonPage = ({ setErrorApi }) => {
   const { id } = useParams();
+  const [personId, setPersonId] = useState(null);
   const [personInfo, setPersonInfo] = useState(null);
   const [personName, setPersonName] = useState(null);
   const [personPhoto, setPersonPhoto] = useState(null);
 
   useEffect(() => {
     (async () => {
+      setPersonId(id);
       const res = await getApiResource(`${API_PERSON}/ ${id}/`);
       //console.log(`${API_PERSON}/ ${id}/`,res);
 
@@ -53,21 +55,22 @@ const PersonPage = ({ setErrorApi }) => {
   }, []);
 
   return (
-      <>
-          <div className={styles.wrapper_main}>
-          <PersonLinkBack/>
-          <div className={styles.wrapper}>
-              
-        <span className={styles.person__name}>{personName}</span>
+    <>
+      <div className={styles.wrapper_main}>
+        <PersonLinkBack />
+        <div className={styles.wrapper}>
+          <span className={styles.person__name}>{personName}</span>
 
-        <div className={styles.container}>
-          <PersonPhoto personPhoto={personPhoto} personName={personName} />
+          <div className={styles.container}>
+            <PersonPhoto
+              personId={personId}
+              personPhoto={personPhoto}
+              personName={personName} />
 
-          {personInfo && <PersonInfo personInfo={personInfo} />}
+            {personInfo && <PersonInfo personInfo={personInfo} />}
+          </div>
         </div>
       </div>
-          </div>
-         
     </>
   );
 };
