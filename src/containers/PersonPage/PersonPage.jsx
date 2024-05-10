@@ -19,12 +19,19 @@ const PersonPage = ({ setErrorApi }) => {
   const [personInfo, setPersonInfo] = useState(null);
   const [personName, setPersonName] = useState(null);
   const [personPhoto, setPersonPhoto] = useState(null);
+  const [personFavorite, setPersonFavorite] = useState(false);
+
+  const storeDate = useSelector(state => state.favoriteReducer);
 
   useEffect(() => {
     (async () => {
       setPersonId(id);
       const res = await getApiResource(`${API_PERSON}/ ${id}/`);
       //console.log(`${API_PERSON}/ ${id}/`,res);
+
+      storeDate[id]
+        ? setPersonFavorite(true)
+        : setPersonFavorite(false);
 
       if (res) {
         setPersonInfo([
@@ -65,7 +72,9 @@ const PersonPage = ({ setErrorApi }) => {
             <PersonPhoto
               personId={personId}
               personPhoto={personPhoto}
-              personName={personName} />
+              personName={personName}
+              setPersonFavorite={setPersonFavorite}
+              personFavorite={ personFavorite} />
 
             {personInfo && <PersonInfo personInfo={personInfo} />}
           </div>
