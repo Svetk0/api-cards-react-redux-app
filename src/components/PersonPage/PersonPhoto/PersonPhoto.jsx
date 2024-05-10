@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { setPersonToFavorite, removePersonFromFavorite } from "@store/actions";
 
 import styles from "./PersonPhoto.module.css";
+import { useState, useEffect } from "react";
 
 const PersonPhoto = ({
   personId,
@@ -14,35 +15,34 @@ const PersonPhoto = ({
 }) => {
   const dispatch = useDispatch();
 
-  const set = () => {
-    dispatch(
-      setPersonToFavorite({
-        [personId]: {
-          name: personName,
-          img: personPhoto,
-        },
-      })
-    );
-      setPersonFavorite(true);
-  };
-  
-    const remove = () => {
-        dispatch(removePersonFromFavorite(personId));
+  const dispatchFavoritePeople = () => {
+    if (personFavorite) {
+      dispatch(removePersonFromFavorite(personId));
         setPersonFavorite(false);
+        
+
+    } else {
+        dispatch(
+            setPersonToFavorite({
+              [personId]: {
+                name: personName,
+                img: personPhoto,
+              },
+            })
+          );
+        setPersonFavorite(true);
+      
+   
+    }
   };
 
-    
   return (
     <>
       <div className={styles.container}>
         <img className={styles.photo} src={personPhoto} alt={personName} />
-          </div>
-          {personFavorite
-              ? <button onClick={remove}>remove from Fav</button>
-              :   <button onClick={set}>add to Fav</button>
-          }
-   
-     
+      </div>
+          <button onClick={dispatchFavoritePeople}>{personFavorite ? 'remove' : 'add'}</button>
+          
     </>
   );
 };
