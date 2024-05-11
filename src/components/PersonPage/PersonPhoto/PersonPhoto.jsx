@@ -16,6 +16,8 @@ const PersonPhoto = ({
   setPersonFavorite,
   personFavorite,
 }) => {
+
+    
   const dispatch = useDispatch();
 
   const dispatchFavoritePeople = () => {
