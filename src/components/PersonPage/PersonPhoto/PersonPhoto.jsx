@@ -3,8 +3,11 @@ import { useDispatch } from "react-redux";
 
 import { setPersonToFavorite, removePersonFromFavorite } from "@store/actions";
 
+import iconFavorite from './img/favorite-fill.svg';
+import iconUnSelect from './img/unselect-star.svg';
+
 import styles from "./PersonPhoto.module.css";
-import { useState, useEffect } from "react";
+
 
 const PersonPhoto = ({
   personId,
@@ -39,9 +42,17 @@ const PersonPhoto = ({
   return (
     <>
       <div className={styles.container}>
-        <img className={styles.photo} src={personPhoto} alt={personName} />
-      </div>
-          <button onClick={dispatchFavoritePeople}>{personFavorite ? 'remove' : 'add'}</button>
+              <img className={styles.photo} src={personPhoto} alt={personName} />
+              
+              <img src={personFavorite ? iconFavorite : iconUnSelect}
+              onClick={dispatchFavoritePeople}
+              className={ styles.favorite}
+              alt="favorite_icon" />
+          </div>
+          
+  
+
+          {/* <button onClick={dispatchFavoritePeople}>{personFavorite ? 'remove' : 'add'}</button> */}
           
     </>
   );
