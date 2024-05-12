@@ -47,7 +47,7 @@ const FavoritePage = () => {
             
 
           ) 
-          : <h2 className={ styles.comment}>Nobody was choosed to favorite...</h2>
+          : <h2 className={ styles.comment}>Nobody was choosen to favorite...</h2>
         }
         <button
           className={styles.buttonClear}
