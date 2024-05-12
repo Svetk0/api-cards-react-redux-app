@@ -1,6 +1,6 @@
 # Star Wars App (based on React and Redux)
 
-Try this project here on [GitHub Pages](https://svetk0.github.io/api-cards-react-redux-app/people/?page=1).
+Try this project here on [GitHub Pages](https://svetk0.github.io/api-cards-react-redux-app/).
 
 ---
 
