@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/api-cards-react-redux-app/people/static/css/main.074730e9.css",
-    "main.js": "/api-cards-react-redux-app/people/static/js/main.88fcc784.js",
-    "static/media/bg.jpeg": "/api-cards-react-redux-app/people/static/media/bg.f70bea2510229ff26a23.jpeg",
-    "static/media/notfound.png": "/api-cards-react-redux-app/people/static/media/notfound.1062f5e41ef989b5973a.png",
-    "index.html": "/api-cards-react-redux-app/people/index.html",
-    "static/media/favorite-fill.svg": "/api-cards-react-redux-app/people/static/media/favorite-fill.6562c66fc83f2d14246ac409c5c1dc08.svg",
-    "static/media/unselect-star.svg": "/api-cards-react-redux-app/people/static/media/unselect-star.5ad405fb3dc1975f46a9680516ce23aa.svg",
-    "static/media/bookmark.svg": "/api-cards-react-redux-app/people/static/media/bookmark.fe6a284f8299a5813df36d36d08c84f8.svg",
-    "main.074730e9.css.map": "/api-cards-react-redux-app/people/static/css/main.074730e9.css.map",
-    "main.88fcc784.js.map": "/api-cards-react-redux-app/people/static/js/main.88fcc784.js.map"
+    "main.css": "/api-cards-react-redux-app/static/css/main.bfa6df45.css",
+    "main.js": "/api-cards-react-redux-app/static/js/main.e07e26ef.js",
+    "static/media/bg.jpeg": "/api-cards-react-redux-app/static/media/bg.f70bea2510229ff26a23.jpeg",
+    "static/media/notfound.png": "/api-cards-react-redux-app/static/media/notfound.1062f5e41ef989b5973a.png",
+    "static/media/favorite-fill.svg": "/api-cards-react-redux-app/static/media/favorite-fill.6562c66fc83f2d14246ac409c5c1dc08.svg",
+    "static/media/unselect-star.svg": "/api-cards-react-redux-app/static/media/unselect-star.5ad405fb3dc1975f46a9680516ce23aa.svg",
+    "index.html": "/api-cards-react-redux-app/index.html",
+    "static/media/bookmark.svg": "/api-cards-react-redux-app/static/media/bookmark.fe6a284f8299a5813df36d36d08c84f8.svg",
+    "main.bfa6df45.css.map": "/api-cards-react-redux-app/static/css/main.bfa6df45.css.map",
+    "main.e07e26ef.js.map": "/api-cards-react-redux-app/static/js/main.e07e26ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.074730e9.css",
-    "static/js/main.88fcc784.js"
+    "static/css/main.bfa6df45.css",
+    "static/js/main.e07e26ef.js"
   ]
 }
