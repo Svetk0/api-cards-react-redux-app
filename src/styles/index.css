@@ -20,8 +20,9 @@
   --font-bold: 600;
 
   --text-shadow-yellow: 0 0 2px var(--color-white), 0 0 40px var(--color-yellow);
-
   --text-shadow-blue: 0 0 2px var(--color-white), 0 0 40px var(--color-blue);
+  --text-shadow-black: 0 0 2px var(--color-white), 0 0 40px var(--color-black);
+
 
   --border-radius-xs: 3px;
   --border-radius-small: 8px;
