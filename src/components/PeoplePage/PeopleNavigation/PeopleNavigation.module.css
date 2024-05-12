@@ -1,8 +1,44 @@
 .link {
-    margin: 10px;
-
+  margin: 20px;
 }
 .buttons {
-width: 100px;
-height: 30px;
+  width: 100px;
+  height: 30px;
+}
+
+.buttons {
+  width: 100px;
+  height: 35px;
+  margin: 20px 0;
+  padding: 7px 10px;
+
+  border: 2px solid var(--color-blue);
+  border-radius: 18px;
+  /* border-radius: var(--border-radius-small); */
+  color: var(--color-blue);
+  text-align: center;
+  text-decoration: none;
+  /* text-shadow: var(--text-shadow-black); */
+  font-family: var(--font-family-main);
+  font-weight: var(--font-bold);
+  background-color: transparent;
+
+  filter: drop-shadow(0px 0px 2px #000);
+  cursor: pointer;
+  transition: var(--transition) ease all;
+}
+
+.buttons:hover {
+  border: 2px solid var(--color-yellow);
+  color: var(--color-yellow);
+  text-shadow: none;
+  /* border-radius: var(--border-radius-small); */
+  transform: scale(1.1);
+}
+
+.buttons:disabled {
+  color: rgba(87, 98, 100);
+  background-color: rgba(87, 98, 100, 0.181);
+  border: 1px solid rgba(87, 98, 100);
+  cursor: not-allowed;
 }
