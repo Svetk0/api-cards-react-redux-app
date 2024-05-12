@@ -1,7 +1,7 @@
 .container {
     display: flex;
     align-items: center;
-    margin-bottom: var(--spacing-large);
+    margin: var(--spacing-large) 0;
 }
 
 .list__container {
