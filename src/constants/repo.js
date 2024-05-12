@@ -1,0 +1,1 @@
+export const REPO_NAME = 'api-cards-react-redux-app';
